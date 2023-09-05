@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RootNamespace>ParusRx.Giros.API</RootNamespace>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.AspNetCore" Version="1.11.0" />
+    <PackageReference Include="ParusRx.EventBus.Dapr" Version="1.0.0-rc.1.5975920134.9" />
+    <PackageReference Include="ParusRx.Storage.Oracle" Version="1.0.0-rc.1.5975920134.9" />
+    <PackageReference Include="ParusRx.Storage.PostgreSql" Version="1.0.0-rc.1.5975920134.9" />
+    <PackageReference Include="ParusRx.Xml" Version="1.0.0-rc.1.5975920134.9" />
+  </ItemGroup>
+
+</Project>
